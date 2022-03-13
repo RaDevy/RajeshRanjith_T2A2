@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GOG</title>
+    <title>GO G</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,11 @@
   </head>
 
   <body>
+    <ul>
+      <li><%= link_to 'Home', root_path %></li>
+      <li><%= link_to 'About', about_path%></li>
+      <li><%= link_to 'Products', product_path%></li>
+    </ul>
     <%= yield %>
   </body>
 </html>
