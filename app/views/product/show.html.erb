@@ -1,4 +1,10 @@
-<h1> <%= @product.title %> </h1>
-<h1> <%= @product.description %> </h1>
-<h1> <%= @product.price %> </h1>
-<%= link_to 'Buy now', product_complete_path %>
+<div class="page">
+    <div class="products_page">  
+        <div class="product_detailed_card">
+            <h1> <%= @product.title %> </h1>
+            <h1> <%= @product.description %> </h1>
+            <h1> $<%= @product.price %> </h1>
+        <%= link_to 'Buy now', product_complete_path, class: "buy_link" %>
+        </div>
+    </div>
+</div>
