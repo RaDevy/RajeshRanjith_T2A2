@@ -10,6 +10,8 @@
   </head>
 
   <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <ul>
       <li class="left"><%= link_to 'Home', root_path %></li>
       <li class="left"><%= link_to 'About', about_path%></li>
@@ -21,8 +23,6 @@
         <li class="right"><a href="/users/sign_in">Sign in</a></li>
       <% end %>
     </ul>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>
