@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   get "/product", to: "product#index", as:  "products"
   get "/product/:id", to: "product#show", as:  "product"
   get "/product/:id/complete", to: "product#complete", as:  "product_complete"
+  post "/product/:new_product", to: "product#new", as:  "new_product"
   devise_for :users
 end
