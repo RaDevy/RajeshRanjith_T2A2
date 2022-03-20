@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   root to: "home#index"
   get "/about", to: "about#index", as: "about"
   get "/product", to: "product#index", as:  "products"
+  get "/product/new", to: "product#new", as:  "new_product"
   get "/product/:id", to: "product#show", as:  "product"
   get "/product/:id/complete", to: "product#complete", as:  "product_complete"
-  post "/product/:new_product", to: "product#new", as:  "new_product"
   devise_for :users
 end
