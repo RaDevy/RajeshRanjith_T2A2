@@ -1,0 +1,18 @@
+development:
+  cloud_name: dezxhm3xp
+  api_key: '485231573142622'
+  api_secret: "-QOjZBJ7MmtP18e610P3W1VMEuDc"
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: dezxhm3xp
+  api_key: '485231573142622'
+  api_secret: "-QOjZBJ7MmtP18e610P3W1VMEuDc"
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: dezxhm3xp
+  api_key: '485231573142622'
+  api_secret: "-QOjZBJ7MmtP18e610P3W1VMEuDc"
+  enhance_image_tag: true
+  static_file_support: false

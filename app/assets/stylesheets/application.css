@@ -15,7 +15,7 @@
  */
  body {
    margin: 0;
-   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../assets/bg.jpg");
+   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("https://res.cloudinary.com/dezxhm3xp/image/upload/v1647751164/bg_agwv3t.jpg");
  }
 
  /* Navbar */
