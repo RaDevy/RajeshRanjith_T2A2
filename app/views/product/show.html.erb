@@ -1,6 +1,10 @@
 <div class="page">
     <div class="products_page">  
         <div class="product_detailed_card">
+            <% if @product.image.attached? %>
+                <%= image_tag @product.image, class: "image" %>
+            <% else %>
+            <% end %>
             <h1> <%= @product.title %> </h1>
             <h1> <%= @product.description %> </h1>
             <h1> $<%= @product.price %> </h1>

@@ -1,6 +1,7 @@
 <div class="container">
-    <%= form_with url: "/create", method: :get do |f| %>
+  <%= form_with url:"/product", method: :post do |f| %>
 
+    <%= f.hidden_field :user_id, value: current_user.id %>
     <div class="field">
       <%= f.label :title %><br />
       <%= f.text_field :title, autofocus: true %>
@@ -16,8 +17,17 @@
       <%= f.number_field :price %>
     </div>
 
+    <div class="field">
+      <%= f.label :image %><br />
+      <%= f.file_field :image %>
+    </div>
+
+    <% if @product.image.attached? %>
+      <%= image_tag @product.image %>
+    <% end %>
+
     <div class="actions_container">
-      <%= f.submit "Create Product", class: "actions" %>
+      <%= f.button :submit, class: "actions" %>
     </div>
   <% end %>
 </div>
